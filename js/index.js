@@ -80,6 +80,12 @@ event.target.style.fontSize = '100px';
 console.log(logoHeading)
 })
 
+//click
+const subscriber = document.querySelector('.destination .btn')
+subscriber.addEventListener('click', (event) => {
+    console.log('The person sing up for the "Fun In The Sun" vocation ')
+})
+
 //preventDefault
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link =>
@@ -98,16 +104,3 @@ e.target.style.border = "5px solid black";
 });
 });
 
-// const funInTheSunSingUp = document.querySelectorAll('.destination .btn');
-// funInTheSunSingUp.addEventListener('click', (event)=>{
-
-// event.target.parentNode.style.color = 'red';
-// console.log(event.target.parentNode);
-// event.stopPropagation();
-// console.log ("Button was clicked!")
-// })
-
-// const parentNode = document.querySelector('.destination')
-// parentNode.addEventListener('click', (event) =>{
-//     console.log ("Parent was clicked!")
-// })
